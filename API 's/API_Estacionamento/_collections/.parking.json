@@ -1,0 +1,16 @@
+{
+  "collection_name": "parking",
+  "created_at": "2024-10-24T22:40:22.290Z",
+  "last_interaction": "2024-10-25T19:23:47.433Z",
+  "data": [
+    {
+      "id": "75e91e68-3a7f-44ad-a856-e7bd0f02a263",
+      "plate": "ABC0002",
+      "checkin": "2024-10-25T05:00:22.100Z",
+      "checkout": null,
+      "total": null,
+      "status": "open",
+      "_zid": 2
+    }
+  ]
+}

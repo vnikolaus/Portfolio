@@ -25,7 +25,6 @@ Para uma visualização mais detalhada, acesse diretamente o projeto desejado:
 * [API_Estacionamento](./API%20's/API_Estacionamento/)
 * [Book_Reservation](./API%20's/Express_APIv2_Book_Reservation/)
 * [CRUD_Products](./API%20's/Express_APIv2_CRUD_Products/)
-* [Parking_Managment](./API%20's/Fastify_APIv2_Parking/)
 * [JWT_Login_Users](./API%20's/NestJS_APIv2_Login_Users/)
 
 ### 💻 Microsserviços

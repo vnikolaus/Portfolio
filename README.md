@@ -42,6 +42,7 @@ Para uma visualização mais detalhada, acesse diretamente o projeto desejado:
 * [Consult_Stocks](./WebSocket/WebSocket_ConsultStocks/)
 
 ### 💻 Projetos Fullstack
+* [Calculadora_Juros_Compostos](./Fullstack_projects/Calculadora_Juros_Compostos/)
 * [Contact_Schedule](./Fullstack_projects/Express_Contact_Schedule/)
 * [Task_List](./Fullstack_projects/NextJS_Task_List/)
 * [Consult_Stocks](./Fullstack_projects/NodeJS_Consult_Stocks/)

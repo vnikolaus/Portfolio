@@ -32,7 +32,7 @@ ipcMain.handle('calculate-taxes', (event, data) => {
     const formula = (valor) => Math.pow(1 + (valor / 100), 1 / 12) - 1
 
     const taxaMensalSelic = formula(input.selic)
-    const { totalFinal: totalSelic } = Core.calculaRendimentos(input, taxaMensalSelic)
+    const { totalFinal: totalSelic, totalInvestido } = Core.calculaRendimentos(input, taxaMensalSelic)
 
     const taxaMensalPrefixado = formula(input.juro_prefixado)
     const { totalFinal: totalPrefixado } = Core.calculaRendimentos(input, taxaMensalPrefixado)
@@ -50,7 +50,7 @@ ipcMain.handle('calculate-taxes', (event, data) => {
 
     const opcaoRentabilidadeLCI = input.opcao_rentabilidade_lci
     const taxaMensalLCI = (opcaoRentabilidadeLCI === 'prefixado') ? formula(input.rentabilidade_lci) : formula((input.rentabilidade_lci / 100) * input[opcaoRentabilidadeLCI])
-    const { totalFinal: totalLCI, totalInvestido }= Core.calculaRendimentos(input, taxaMensalLCI, true)
+    const { totalFinal: totalLCI }= Core.calculaRendimentos(input, taxaMensalLCI, true)
     
     const taxaMensalPoupanca = input.rentabilidade_poupanca / 100
     const { totalFinal: totalPoupanca } = Core.calculaRendimentos(input, taxaMensalPoupanca, true)

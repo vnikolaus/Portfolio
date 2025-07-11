@@ -3,7 +3,7 @@
 
 Aplicação responsável por simular a rentabilidade líquida de diferentes tipos de investimentos com base em valores aportados, tempo de aplicação e taxas informadas.
 
-<img src="./_imgs/exemplo_aplicacao.png" alt="Aplicacao" width="700"/>
+<img src="./_imgs/calc_jc.gif" alt="Aplicacao" width="700"/>
 
 ## 📋 Dependências
 

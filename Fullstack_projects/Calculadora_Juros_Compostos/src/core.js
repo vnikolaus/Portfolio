@@ -1,3 +1,21 @@
+/**
+ * @typedef {Object} InvestmentParams
+ * @property {number} investimento_inicial
+ * @property {number | null} aporte_mensal
+ * @property {number} periodo
+ * @property {number} selic
+ * @property {number} cdi
+ * @property {number} ipca
+ * @property {number | null} juro_prefixado
+ * @property {number | null} juro_ipca
+ * @property {number} rentabilidade_cdb
+ * @property {number} rentabilidade_di
+ * @property {number} rentabilidade_lci
+ * @property {number} rentabilidade_poupanca
+ * @property {string} opcao_rentabilidade_cdb
+ * @property {string} opcao_rentabilidade_lci
+ */
+
 export class Core {
     /**
      * @param {number} valor

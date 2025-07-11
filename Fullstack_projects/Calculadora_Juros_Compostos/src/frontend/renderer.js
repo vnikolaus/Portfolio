@@ -49,6 +49,10 @@ MAIN_WINDOW.addEventListener('DOMContentLoaded', (e) => {
 /** @Utils */
 
 class Utils {
+    /**
+     * @param {string} message
+     * @returns {void}
+     */
     static showError(message = 'Preencha os campos corretamente.') {
         const errorDiv = document.getElementById('error-message');
         errorDiv.textContent = message;

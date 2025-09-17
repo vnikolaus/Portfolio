@@ -1,23 +1,28 @@
-import { ParkingCollection } from "./app/collections/ParkingCollection";
-import { ParkingController } from "./app/controllers/ParkingController";
-import { DB } from "./infra/db/DB";
-import { ExpressAdapter } from "./infra/server/ExpressAdapter";
+import express, { Router } from 'express';
+import { Config } from './_shared/shared.js';
+import { Controller } from './app/controllers/Controller.js';
+import { DB } from "./infra/database/DB.js";
 
-export type Config = {
-    app: ExpressAdapter,
-    parkingCollection: ParkingCollection
-}
+const app    = express();
+const router = Router({ caseSensitive: true });
 
-async function main() {
-    const db = new DB()
-    const app = new ExpressAdapter()
-    app.connect()
-    const config: Config = {
-        app,
-        parkingCollection: db.createCollection('parking')
+app.use(express.json());
+app.use('/', router);
+
+const db         = new DB();
+const collection = db.createCollection('parking');
+const controller = new Controller();
+
+const config: Config = {
+    router,
+    db: {
+        parking: collection
     }
-    const parkingController = new ParkingController()
-    parkingController.exec(config)
-}
+};
 
-main()
+controller.start(config);
+
+const port = process.env.PORT || 3001;
+app.listen(port, () => {
+    console.log(`[API] running at: http://locahost:${port}`);
+})

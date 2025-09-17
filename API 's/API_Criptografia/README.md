@@ -7,7 +7,9 @@ API responsável por gerar **hashes** e realizar **criptografia/descriptografia 
 ```bash
 git clone <repo-url>
 cd <nome-da-api>
+
 npm install
+# e descomente "types": ["node"] no tsconfig ou instale @types/node
 npm run dev
 ```
 

@@ -24,7 +24,7 @@ Para uma visualização mais detalhada, acesse diretamente o projeto desejado:
 ### 💻 API 's
 * [API_Criptografia](./API%20's/API_Criptografia/)
 * [API_Estacionamento](./API%20's/API_Estacionamento/)
-* [Book_Reservation](./API%20's/Express_APIv2_Book_Reservation/)
+* [Reserva_Livros](./API%20's/API_Reserva_Livros/)
 * [CRUD_Products](./API%20's/Express_APIv2_CRUD_Products/)
 * [JWT_Login_Users](./API%20's/NestJS_APIv2_Login_Users/)
 

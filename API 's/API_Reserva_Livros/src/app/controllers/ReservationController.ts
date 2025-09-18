@@ -7,7 +7,6 @@ export class ReservationController {
     constructor(private readonly app: FastifyInstance) {}
 
     async addReservation(input: Prisma.ReservationUncheckedCreateInput) {
-
         const schema = z.object({
             duration:   z.number().min(0),
             book_id:    z.number().min(0),

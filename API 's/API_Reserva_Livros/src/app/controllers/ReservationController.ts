@@ -16,10 +16,10 @@ export class ReservationController {
         })
         const zInput = schema.parse(input);
 
-        const build  = new BuildReservation(this.app);
-        const dto    = await build.exec(zInput);
+        const build       = new BuildReservation(this.app);
+        const reservation = await build.exec(zInput);
 
-        return dto;
+        return reservation;
     }
 
     async deleteReservation(id: string) {

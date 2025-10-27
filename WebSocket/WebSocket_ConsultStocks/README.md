@@ -92,7 +92,7 @@ CÁLCULO -> Soma anual dos dividendos / 0.06
 ## 🖵 Layout
 
 ### Exemplos da Consulta:
-Itau Unibanco - [ITUB4](./img/itub4.png) <br>
+Itau Unibanco - ![ITUB4](./img/itub4.png) <br>
 Vale - [VALE3](./img/vale3.png) <br>
 B3 - [B3SA3](./img/b3sa3.png) <br>
 

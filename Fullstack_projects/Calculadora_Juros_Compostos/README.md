@@ -46,7 +46,7 @@ O sistema calcula e exibe a rentabilidade líquida para cada tipo de investiment
 
 #### Exemplo de visualização
 
-[](./img/exemplo_grafico.png)
+![](./img/exemplo_grafico.png)
 
 É possível limitar o gráfico clicando nas legendas (retângulos) de cada índice. Assim, você pode focar apenas nos investimentos desejados.
 
